@@ -1,0 +1,18 @@
+tikets = 0
+quant = (int(input("Количество необходимых билетов:")))
+for age in range(quant):
+    age = (int(input("Возраст посетителей:")))
+    if age < 18:
+        tikets += 0
+    elif age >= 18 and age <= 25:
+      tikets += 990
+    elif age > 25:
+        tikets += 1390
+if tiket == 0:
+    print("Проход бесплатный")
+else:
+    print("Сумма к оплате", tikets)
+if quant > 3:
+    discount = tikets / 100 * 10
+    print("Ваша скидка 10%", discount)
+    print("Сумма к оплате:", tikets - discount)
